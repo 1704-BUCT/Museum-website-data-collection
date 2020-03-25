@@ -11,7 +11,7 @@ res.encoding='utf-8'
 soup=BeautifulSoup(res.text,"html.parser")
 
 test1=soup.dd.find_all(name='a',attrs={'href':re.compile(r'^/plus/list.php')})
-#print(type(test1)) 
+# print(test1) 
 
 n=0  #统计数量
 for i in test1:
